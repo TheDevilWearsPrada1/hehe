@@ -20,7 +20,7 @@
         android:layout_height="50dp"
         android:layout_centerInParent="true" />
 
-    <com.example.guanoweather.base.CHImageView
+    <com.example.heheweather.base.CHImageView
         android:id="@+id/grid_weatherimage"
         android:layout_width="40dp"
         android:layout_height="40dp"

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.guanoweather"
+    package="com.zonst.ruijinmj"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -30,13 +30,13 @@
     <uses-permission android:name="android.permission.READ_LOGS"/>
 
     <application
-		android:name="com.example.guanoweather.base.Appliction"    
+		android:name="com.example.heheweather.base.Appliction"    
         android:allowBackup="true"
         android:icon="@drawable/guano_icon"
         android:label="@string/app_name"
         android:theme="@android:style/Theme.Black.NoTitleBar" >
         <activity
-            android:name="com.example.guanoweather.LaunchActivity"
+            android:name="com.example.heheweather.LaunchActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -45,16 +45,16 @@
             </intent-filter>
         </activity>
         <!-- windowSoftInputMode属性是为了不默认弹出软键盘 -->
-        <activity android:name="com.example.guanoweather.HomePagerActivity"
+        <activity android:name="com.example.heheweather.HomePagerActivity"
             android:windowSoftInputMode="adjustPan"  >
         </activity>
-        <activity android:name="com.example.guanoweather.FragmentHomeContent" >
+        <activity android:name="com.example.heheweather.FragmentHomeContent" >
         </activity>
-        <activity android:name="com.example.guanoweather.FragmentTodayCan" >
+        <activity android:name="com.example.heheweather.FragmentTodayCan" >
         </activity>
-        <activity android:name="com.example.guanoweather.FragmentMoreApp" >
+        <activity android:name="com.example.heheweather.FragmentMoreApp" >
         </activity>
-        <activity android:name="com.example.guanoweather.AddCityActivity" >
+        <activity android:name="com.example.heheweather.AddCityActivity" >
         </activity>
         <!-- 声明service组件,每个app拥有自己单独的定位service -->
         <service android:name="com.baidu.location.f"
@@ -62,7 +62,7 @@
             android:process=":remote">
         </service>
         <meta-data android:name="com.baidu.lbsapi.API_KEY"
-            android:value="iGs8rFvzh1e8c7C9DjXT5toK"/>
+            android:value="ONnKmuknmitfzZ5xwe5KCzebSeaRPzKW"/>
     </application>
 
 </manifest>
