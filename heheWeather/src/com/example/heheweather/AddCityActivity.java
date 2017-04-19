@@ -12,7 +12,7 @@ import android.widget.GridView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.zonst.ruijinmj.R;
+import com.zonst.heheweather.R;
 import com.example.heheweather.adapter.GridAddCityAdapter;
 import com.example.heheweather.bean.SQLiteCityManager;
 

@@ -16,7 +16,7 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.GridView;
 import android.widget.TextView;
 
-import com.zonst.ruijinmj.R;
+import com.zonst.heheweather.R;
 import com.example.heheweather.adapter.GridTodayCAdapter;
 import com.example.heheweather.bean.SportIndexBean;
 

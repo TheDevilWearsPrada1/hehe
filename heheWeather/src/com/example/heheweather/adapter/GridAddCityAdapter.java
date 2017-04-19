@@ -11,7 +11,7 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
-import com.zonst.ruijinmj.R;
+import com.zonst.heheweather.R;
 import com.example.heheweather.bean.SQLiteCityManager;
 
 public class GridAddCityAdapter extends BaseAdapter {

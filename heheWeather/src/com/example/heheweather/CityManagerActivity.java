@@ -7,7 +7,7 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.widget.GridView;
 
-import com.zonst.ruijinmj.R;
+import com.zonst.heheweather.R;
 import com.example.heheweather.adapter.GridCityMAdapter;
 import com.example.heheweather.bean.CityManagerBean;
 

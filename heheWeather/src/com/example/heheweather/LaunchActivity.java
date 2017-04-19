@@ -17,7 +17,7 @@ import com.baidu.location.BDLocationListener;
 import com.baidu.location.LocationClient;
 import com.baidu.location.LocationClientOption;
 import com.baidu.location.LocationClientOption.LocationMode;
-import com.zonst.ruijinmj.R;
+import com.zonst.heheweather.R;
 import com.example.heheweather.bean.MHttpEntity;
 import com.example.heheweather.bean.ResponseWrapper;
 import com.example.heheweather.bean.SendDataBean;

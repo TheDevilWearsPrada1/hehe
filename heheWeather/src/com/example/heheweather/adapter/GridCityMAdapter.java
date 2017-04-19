@@ -15,7 +15,7 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.zonst.ruijinmj.R;
+import com.zonst.heheweather.R;
 import com.example.heheweather.base.CHImageView;
 import com.example.heheweather.bean.CityManagerBean;
 import com.example.heheweather.bean.SQLiteCityManager;

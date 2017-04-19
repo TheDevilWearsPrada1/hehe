@@ -26,7 +26,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.zonst.ruijinmj.R;
+import com.zonst.heheweather.R;
 import com.example.heheweather.bean.CityManagerBean;
 import com.example.heheweather.bean.MHttpEntity;
 import com.example.heheweather.bean.ResponseWrapper;
@@ -63,6 +63,9 @@ public class HomePagerActivity extends FragmentActivity implements
 
 		Intent intent = getIntent();
 		String wetherdata = intent.getStringExtra("weather_data");// 得到启动页传递过来的数据
+		if(wetherdata==null){
+			wetherdata="";
+		}
 		GsonBuilder gson = new GsonBuilder();//
 		response2 = gson.create().fromJson(wetherdata, ResponseWrapper.class);
 		if(response2.getError() == 0){

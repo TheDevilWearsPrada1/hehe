@@ -11,6 +11,7 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.os.SystemClock;
 import android.support.v4.app.Fragment;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -21,7 +22,7 @@ import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.zonst.ruijinmj.R;
+import com.zonst.heheweather.R;
 import com.example.heheweather.adapter.ListWeatherAdapter;
 import com.example.heheweather.base.Lunar;
 import com.example.heheweather.bean.CityManagerBean;
@@ -83,6 +84,20 @@ public class FragmentHomeContent extends Fragment {
 			pDialog.dismiss();
 		}
 		Log.i("TAG", tweatherlist + "-->tweatherlist");
+		
+		if(HomePagerActivity.response.getResults().get(0)
+				.getWeather_data()==null){
+			ProgressDialog pDialog1;
+			pDialog1 = new ProgressDialog(getActivity());
+			pDialog1.setCancelable(false);
+			pDialog1.setMessage("加载天气数据失败");
+			pDialog1.setProgressStyle(ProgressDialog.STYLE_SPINNER);
+			pDialog1.show();
+			SystemClock.sleep(2000);
+			pDialog1.dismiss();
+			mactivity.senddata(inputcity);
+			mactivity.sendcitytext(inputcity.getText().toString());
+		}
 		tweatherlist.setAdapter(new ListWeatherAdapter(getActivity(),
 				HomePagerActivity.response.getResults().get(0)
 						.getWeather_data()));

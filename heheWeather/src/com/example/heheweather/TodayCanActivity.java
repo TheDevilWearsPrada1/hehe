@@ -1,6 +1,6 @@
 package com.example.heheweather;
 
-import com.zonst.ruijinmj.R;
+import com.zonst.heheweather.R;
 
 import android.app.Activity;
 import android.content.Intent;

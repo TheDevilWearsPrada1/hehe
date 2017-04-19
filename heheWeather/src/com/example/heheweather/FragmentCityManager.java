@@ -15,7 +15,7 @@ import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.GridView;
 
-import com.zonst.ruijinmj.R;
+import com.zonst.heheweather.R;
 import com.example.heheweather.adapter.GridCityMAdapter;
 import com.example.heheweather.bean.CityManagerBean;
 import com.example.heheweather.bean.SQLiteCityManager;
